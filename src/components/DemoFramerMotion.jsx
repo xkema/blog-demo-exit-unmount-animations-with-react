@@ -48,6 +48,7 @@ function DemoFramerMotion() {
 
       <div className="outer">
         <code>&lt;AnimatePresence /&gt;</code>
+        {/* 👇 */}
         <AnimatePresence>
           {isVisibleFramerMotion && (
             <motion.div

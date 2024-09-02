@@ -3,6 +3,7 @@ import './App.css'
 import AnimationContainer from './components/AnimationContainer'
 import ComponentToBeAnimated from './components/ComponentToBeAnimated'
 import DemoFramerMotion from './components/DemoFramerMotion'
+import DemoReactTransitionGroup from './components/DemoReactTransitionGroup'
 
 function App() {
   const [isVisible, setIsVisible] = useState(true)
@@ -36,6 +37,7 @@ function App() {
             </code>
           </p>
 
+          {/* 👇 */}
           <AnimationContainer isVisible={isVisible}>
             <ComponentToBeAnimated />
           </AnimationContainer>
@@ -45,6 +47,9 @@ function App() {
 
         {/* framer-motion demo */}
         <DemoFramerMotion />
+
+        {/* react-transition-group */}
+        <DemoReactTransitionGroup />
       </main>
 
       <footer>

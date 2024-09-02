@@ -17,11 +17,33 @@
   margin-top: 1rem;
 }
 
+/* problem definition demo animations */
+
 .animate-in {
   animation: fade-in 500ms forwards;
 }
 
 .animate-out {
+  animation: fade-out 500ms forwards;
+}
+
+/* react-transition-group demo animations */
+
+.enter,
+.appear {
+  opacity: 0;
+}
+
+.enter-active,
+.appear-active {
+  animation: fade-in 500ms forwards;
+}
+
+.exit {
+  opacity: 1;
+}
+
+.exit-active {
   animation: fade-out 500ms forwards;
 }
 
