@@ -37,8 +37,10 @@ function DemoFramerMotion() {
 
       <p>
         <button onClick={() => { setIsVisibleFramerMotion(prev => !prev) }}>
-          Toggle Animated Component (Framer Motion)
+          Toggle
         </button>
+        {' '}
+        <code>Framer Motion</code>
         {' '}
         <code>
           isVisibleFramerMotion:

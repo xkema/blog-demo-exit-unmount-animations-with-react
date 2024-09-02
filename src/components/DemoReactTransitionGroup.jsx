@@ -62,8 +62,10 @@ function DemoReactTransitionGroup() {
 
       <p>
         <button onClick={() => { setIsVisibleReactTransitionGroup(prev => !prev) }}>
-          Toggle Animated Component (React Transition Group)
+          Toggle
         </button>
+        {' '}
+        <code>React Transition Group</code>
         {' '}
         <code>
           isVisibleReactTransitionGroup:

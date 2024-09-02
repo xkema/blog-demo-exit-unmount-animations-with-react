@@ -28,8 +28,10 @@ function App() {
 
           <p>
             <button onClick={() => { setIsVisible(prev => !prev) }}>
-              Toggle Animated Component
+              Toggle
             </button>
+            {' '}
+            <code>Problem Definition Demo</code>
             {' '}
             <code>
               isVisible:
