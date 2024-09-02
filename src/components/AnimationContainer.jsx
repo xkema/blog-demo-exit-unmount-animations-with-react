@@ -14,8 +14,8 @@ function AnimationContainer({ isVisible, children }) {
   }, [isVisible])
 
   return (
-    <div className="animation-container">
-      <p><code>&lt;AnimationContainer /&gt;</code></p>
+    <div className="outer">
+      <code>&lt;AnimationContainer isVisible=&#123;isVisible&#125; /&gt;</code>
       {isVisibleInner && (
         <div
           className={`dummy-div-to-avoid-prop-drilling ${isVisible ? 'animate-in' : 'animate-out'}`}

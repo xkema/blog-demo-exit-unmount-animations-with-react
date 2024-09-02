@@ -4,24 +4,25 @@
   padding: 1rem;
 }
 
-.animation-container {
+.outer {
   border: 4px dashed darkgreen;
   background-color: palegreen;
   padding: 1rem;
 }
 
-.component-to-be-animated {
+.inner {
   border: 4px dashed limegreen;
   background-color: honeydew;
   padding: 1rem;
+  margin-top: 1rem;
 }
 
 .animate-in {
-  animation: fade-in 1000ms forwards;
+  animation: fade-in 500ms forwards;
 }
 
 .animate-out {
-  animation: fade-out 1000ms forwards;
+  animation: fade-out 500ms forwards;
 }
 
 @keyframes fade-in {

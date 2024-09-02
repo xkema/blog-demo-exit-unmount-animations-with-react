@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import AnimationContainer from './components/AnimationContainer'
 import ComponentToBeAnimated from './components/ComponentToBeAnimated'
+import DemoFramerMotion from './components/DemoFramerMotion'
 
 function App() {
   const [isVisible, setIsVisible] = useState(true)
@@ -38,7 +39,12 @@ function App() {
           <AnimationContainer isVisible={isVisible}>
             <ComponentToBeAnimated />
           </AnimationContainer>
+
+          <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/App.jsx">See the code at GitHub</a></p>
         </section>
+
+        {/* framer-motion demo */}
+        <DemoFramerMotion />
       </main>
 
       <footer>

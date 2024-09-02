@@ -1,9 +1,12 @@
 function ComponentToBeAnimated() {
   return (
     <div
-      className="component-to-be-animated"
+      className="inner"
     >
-      <p><code>&lt;ComponentToBeAnimated /&gt;</code></p>
+      <code>&lt;div.dummy-div-to-avoid-prop-drilling&gt;</code>
+      <br />
+      &nbsp;&nbsp;
+      <code>&lt;ComponentToBeAnimated /&gt;</code>
     </div>
   )
 }
