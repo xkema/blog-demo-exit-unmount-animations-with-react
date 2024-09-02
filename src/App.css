@@ -1,5 +1,45 @@
 .container {
-  max-width: 720px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.animation-container {
+  border: 4px dashed darkgreen;
+  background-color: palegreen;
+  padding: 1rem;
+}
+
+.component-to-be-animated {
+  border: 4px dashed limegreen;
+  background-color: honeydew;
+  padding: 1rem;
+}
+
+.animate-in {
+  animation: fade-in 1000ms forwards;
+}
+
+.animate-out {
+  animation: fade-out 1000ms forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

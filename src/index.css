@@ -17,3 +17,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  padding: 1rem 0;
+}
+
+main {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding: 1rem 0;
+}
+
+footer {
+  padding: 1rem 0;
+  font-size: small;
+  text-align: center;
+}
+
+code {
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  border-radius: 3px;
+  padding: 1px 4px;
+  white-space: nowrap;
+}
