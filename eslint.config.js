@@ -36,6 +36,7 @@ export default [
         { allowConstantExport: true },
       ],
       ...stylistic.configs['recommended-flat'].rules,
+      '@stylistic/jsx-one-expression-per-line': 'off',
     },
   },
 ]
