@@ -42,7 +42,7 @@ function DemoReactTransitionGroup() {
         </CSSTransition>
 
       </div>
-      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoFramerMotion.jsx">See the code at GitHub</a></p>
+      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoReactTransitionGroup.jsx">See the code at GitHub</a></p>
     </section>
   )
 }
