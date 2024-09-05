@@ -27,10 +27,12 @@ function DemoGSAP() {
     <section>
       <h2 id="demo-4-gsap">Demo 4 - GSAP <a href="#demo-4-gsap">#</a> </h2>
 
-      <p>Implementing the same logic with GSAP was a little bit challenging then the others. There is no built-in solution for exit/unmount animations in the library and it uses an imperative approach to build animations. It is a framework-agnostic library and uses a lower-level abstraction and makes you ask more questions then other libraries. I think I will write another article about GSAP, so I will stop to try explaining things for now.</p>
-      <p>The challenging part was mostly about the &quot;context-safe&quot; context (pun intended) and the &quot;cleaup logic&quot; comes with the React helper <code>useGSAP</code> hook.</p>
-      <p>In summary, as we did in the problem definition and react transition group demos, we also need to manually delay when React unmounts the animated element with listening to the <code>onAnimationEnd</code> event.</p>
-      <p>To make the demo code simple I separated enter and exit logic to the parent and child components. So exit is handled in the parent, enter is handled in the animated component body. (There is a reason for that I will try to explain in a separate post.) One more thing. Exit animation is created again and again here. Using <code>forwardRef</code> + <code>useImperativeHandler</code> or saving the recreated animation into a <code>useRef</code> hook were 2 solution I could come up with. But  again, for the sake of simplicity. I skipped them.</p>
+      <p>Implementing the same logic using GSAP was more challenging than with other libraries. Unlike those libraries, GSAP doesn&apos;t have a built-in solution for exit/unmount animations and employs an imperative approach to build animations. As a  framework-agnostic library, it uses a lower-level abstraction, requiring you to ask more questions compared to other libraries. I think I&apos;ll write another article about GSAP, so I&apos;ll stop here and avoid further explanations.</p>
+      <p>The most challenging part was dealing with the &quot;context-safe&quot; context (pun intended) and the &quot;cleanup logic&quot; that comes with the React helper <code>useGSAP</code> hook.</p>
+      <p>In summary, as we did in the problem definition and React Transition Group demos, we also need to manually delay the animation when React unmounts the animated element by listening for the <code>onAnimationEnd</code> event.</p>
+      <p>To keep the demo code simple, I separated the enter and exit logic into parent and child components. The exit is handled in the parent, while the enter is handled in the animated component&apos;s body. (I&apos;ll explain the reason behind this separation in a separate post.)</p>
+      <p>⚠️ One more thing! The exit animation is created repeatedly every time the user clicks the toggle button to hide the component. To address this issue, two potential solutions came to mind: using <code>forwardRef</code> and <code>useImperativeHandler</code>, or saving the recreated animation in a <code>useRef</code> hook. However, for the sake of simplicity, I decided to skip these approaches here.</p>
+
       <p>
         {/* 👇 */}
         <button onClick={

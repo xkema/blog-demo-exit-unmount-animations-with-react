@@ -11,10 +11,11 @@ function DemoReactTransitionGroup() {
     <section>
       <h2 id="demo-3-react-transition-group">Demo 3 - React Transition Group <a href="#demo-3-react-transition-group">#</a></h2>
 
-      <p>React Transition Group is not an animation library. It is a kind of a decorator that decorates animation containers and targets by animation-related class names and event handlers. You are still responsible for writing CSS animations with it using the library provided built-in (prefixable) class names.</p>
-      <p>To control exit animations you need to use 2 props of the <code>CSSTransition</code> (or <code>Transition</code>) component. The <code>unmountOnExit</code> flag and <code>addEndListener</code> event listener.</p>
-      <p>There is also a fallback mechanism controlled with the <code>timeout</code> prop to signal the ending of the animations forcefully.</p>
-      <p>⚠️ When using the <code>addEndListener</code> handler, do not forget to use the correct native JavaScript event listener inside the handler. If you are using CSS <code>transition</code> property for the animations then listen to the <code>transitionend</code> event. If you are using CSS <code>animation</code> property then listen to the <code>animationend</code> event.</p>
+      <p>React Transition Group is not an animation library; rather, it&apos;s a decorator that enhances animation containers and targets by providing animation-related class names and event handlers. You still need to write your own CSS animations using the library&apos;s built-in (prefixable) class names.</p>
+      <p>To control exit animations, you must utilize two props of the <code>CSSTransition</code> (or <code>Transition</code>) component: the <code>unmountOnExit</code> flag and the <code>addEndListener</code> event listener.</p>
+      <p>There is also a fallback mechanism controlled by the <code>timeout</code> prop to forcibly signal the end of the animations when necessary.</p>
+      <p>⚠️ When using the <code>addEndListener</code> handler, remember to use the correct native JavaScript event listener within the handler. If you&apos;re utilizing CSS <code>transition</code> property for your animations, listen for the <code>transitionend</code> event. If you&apos;re using CSS <code>animation</code> property, listen for the <code>animationend</code> event instead.</p>
+
       <p>
         {/* 👇 */}
         <button onClick={

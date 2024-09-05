@@ -10,7 +10,8 @@ function DemoProblemDefinition() {
     <section>
       <h2 id="demo-1-problem-definition"> Demo 1 - Problem Definition <a href="#demo-1-problem-definition">#</a></h2>
 
-      <p>This is the demo for the problem definition, featuring an <code>&lt;AnimationContainer /&gt;</code> with both inner and outer visibility controller variables. Click the button below to toggle the animated component.</p>
+      <p>This is the demo for the problem definition, which features an <code>&lt;AnimationContainer /&gt;</code> with both inner and outer visibility controller variables. Click the button below to toggle the animated component.</p>
+
       <p>
         {/* 👇 */}
         <button onClick={

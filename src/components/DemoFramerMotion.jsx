@@ -9,9 +9,10 @@ function DemoFramerMotion() {
     <section>
       <h2 id="demo-2-framer-motion">Demo 2 - Framer Motion <a href="#demo-2-framer-motion">#</a></h2>
 
-      <p>Framer Motion provides us with a powerful exit animation container called <code>&lt;AnimatePresence /&gt;</code>. The only notable limitation of the component is animated components have to be the direct children of the <code>&lt;AnimatePresence /&gt;</code>. (It happens to be a React limitation originally.) Then it is some kind of magic.</p>
-      <p>Actually it is not that magic. 😄 But the developers did a really great job. Instead of controlling a flag like <code>isVisible</code>, the component keep track of all the children if they are exiting from the React tree by looping through the direct children.</p>
-      <p>⚠️ The wrapper <code>div</code> around the <code>AnimatePresence</code> is just for demonstration purposes. No need for it!</p>
+      <p>Framer Motion provides us with a powerful exit animation container, <code>&lt;AnimatePresence /&gt;</code>, which offers significant functionality. However, there is one notable limitation: animated components must be direct children of <code>&lt;AnimatePresence /&gt;</code>. (This restriction stems from a React limitation originally.)</p>
+      <p>At first glance, it may seem like magic. 😄 But the maintainers did an excellent job. Instead of relying on a flag like <code>isVisible</code>, the component keeps track of its children&apos;s exit status by iterating through its direct children.</p>
+      <p>⚠️ Note that the wrapper <code>div</code> around <code>AnimatePresence</code> is merely for demonstration purposes and not required in practice!</p>
+
       <p>
         {/* 👇 */}
         <button onClick={
