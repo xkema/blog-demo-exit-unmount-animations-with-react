@@ -30,7 +30,7 @@ function DemoProblemDefinition() {
         <ComponentToBeAnimated />
       </AnimationContainer>
 
-      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoProblemDefinition.jsx">See the code at GitHub</a></p>
+      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoProblemDefinition.jsx">See the code at GitHub</a> <small>(Problem Definition)</small></p>
     </section>
   )
 }

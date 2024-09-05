@@ -80,6 +80,14 @@ button:hover {
   transform: scale(1.025) rotateZ(-7deg);
 }
 
+section {
+  border-bottom: 2.1rem double gainsboro;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

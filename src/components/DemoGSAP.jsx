@@ -53,7 +53,7 @@ function DemoGSAP() {
         {isVisibleGSAP && <ComponentToBeAnimatedGSAP />}
 
       </div>
-      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoGSAP.jsx">See the code at GitHub</a></p>
+      <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react/blob/main/src/components/DemoGSAP.jsx">See the code at GitHub</a> <small>(GSAP)</small></p>
     </section>
   )
 }
