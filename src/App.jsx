@@ -4,6 +4,7 @@ import AnimationContainer from './components/AnimationContainer'
 import ComponentToBeAnimated from './components/ComponentToBeAnimated'
 import DemoFramerMotion from './components/DemoFramerMotion'
 import DemoReactTransitionGroup from './components/DemoReactTransitionGroup'
+import DemoGSAP from './components/DemoGSAP'
 
 function App() {
   const [isVisible, setIsVisible] = useState(true)
@@ -50,8 +51,11 @@ function App() {
         {/* framer-motion demo */}
         <DemoFramerMotion />
 
-        {/* react-transition-group */}
+        {/* react-transition-group demo */}
         <DemoReactTransitionGroup />
+
+        {/* gsap demo */}
+        <DemoGSAP />
       </main>
 
       <footer>
