@@ -16,7 +16,14 @@ function DemoReactTransitionGroup() {
       <p>There is also a fallback mechanism controlled with the <code>timeout</code> prop to signal the ending of the animations forcefully.</p>
       <p>⚠️ When using the <code>addEndListener</code> handler, do not forget to use the correct native JavaScript event listener inside the handler. If you are using CSS <code>transition</code> property for the animations then listen to the <code>transitionend</code> event. If you are using CSS <code>animation</code> property then listen to the <code>animationend</code> event.</p>
       <p>
-        <button onClick={() => { setIsVisibleReactTransitionGroup(prev => !prev) }}>Toggle</button>
+        {/* 👇 */}
+        <button onClick={
+          () => {
+            setIsVisibleReactTransitionGroup(prev => !prev)
+          }
+        }
+        >Toggle
+        </button>
       </p>
       <p>
         <code>React Transition Group</code> - <code>isVisibleReactTransitionGroup: {JSON.stringify(isVisibleReactTransitionGroup)}</code>

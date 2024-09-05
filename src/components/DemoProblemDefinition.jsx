@@ -12,7 +12,14 @@ function DemoProblemDefinition() {
 
       <p>This is the demo for the problem definition, featuring an <code>&lt;AnimationContainer /&gt;</code> with both inner and outer visibility controller variables. Click the button below to toggle the animated component.</p>
       <p>
-        <button onClick={() => { setIsVisible(prev => !prev) }}>Toggle</button>
+        {/* 👇 */}
+        <button onClick={
+          () => {
+            setIsVisible(prev => !prev)
+          }
+        }
+        >Toggle
+        </button>
       </p>
       <p>
         <code>Problem Definition Demo</code> - <code>isVisible: {JSON.stringify(isVisible)}</code>

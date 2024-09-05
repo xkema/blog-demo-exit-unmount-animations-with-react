@@ -13,7 +13,14 @@ function DemoFramerMotion() {
       <p>Actually it is not that magic. 😄 But the developers did a really great job. Instead of controlling a flag like <code>isVisible</code>, the component keep track of all the children if they are exiting from the React tree by looping through the direct children.</p>
       <p>⚠️ The wrapper <code>div</code> around the <code>AnimatePresence</code> is just for demonstration purposes. No need for it!</p>
       <p>
-        <button onClick={() => { setIsVisibleFramerMotion(prev => !prev) }}>Toggle</button>
+        {/* 👇 */}
+        <button onClick={
+          () => {
+            setIsVisibleFramerMotion(prev => !prev)
+          }
+        }
+        >Toggle
+        </button>
       </p>
       <p>
         <code>Framer Motion</code> - <code>isVisibleFramerMotion: {JSON.stringify(isVisibleFramerMotion)}</code>
