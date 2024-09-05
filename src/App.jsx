@@ -18,7 +18,11 @@ function App() {
       <main>
         {/* problem definition demo */}
         <section>
-          <h2>Demo 1 - Problem Definition</h2>
+          <h2 id="demo-1-problem-definition">
+            Demo 1 - Problem Definition
+            {' '}
+            <a href="#demo-1-problem-definition">#</a>
+          </h2>
           <p>
             This is the demo for the problem definition, featuring an
             {' '}

@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -45,6 +45,18 @@
 
 .exit-active {
   animation: fade-out 500ms forwards;
+}
+
+h2 {
+  scroll-margin-top: 2rem;
+}
+
+h2>a {
+  visibility: hidden;
+}
+
+h2:hover>a {
+  visibility: visible;
 }
 
 @keyframes fade-in {

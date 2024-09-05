@@ -7,7 +7,11 @@ function DemoFramerMotion() {
 
   return (
     <section>
-      <h2>Demo 2 - Framer Motion</h2>
+      <h2 id="demo-2-framer-motion">
+        Demo 2 - Framer Motion
+        {' '}
+        <a href="#demo-2-framer-motion">#</a>
+      </h2>
       <p>
         Framer Motion provides us with a powerful exit animation container called
         {' '}

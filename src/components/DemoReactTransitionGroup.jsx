@@ -9,7 +9,11 @@ function DemoReactTransitionGroup() {
 
   return (
     <section>
-      <h2>Demo 3 - React Transition Group</h2>
+      <h2 id="demo-3-react-transition-group">
+        Demo 3 - React Transition Group
+        {' '}
+        <a href="#demo-3-react-transition-group">#</a>
+      </h2>
       <p>React Transition Group is not an animation library. It is a kind of a decorator that decorates animation containers and targets by animation-related class names and event handlers. You are still responsible for writing CSS animations with it using the library provided built-in (prefixable) class names.</p>
       <p>
         To control exit animations you need to use 2 props of the
@@ -53,7 +57,7 @@ function DemoReactTransitionGroup() {
         {' '}
         <code>animation</code>
         {' '}
-        then listen to the
+        property then listen to the
         {' '}
         <code>animationend</code>
         {' '}
