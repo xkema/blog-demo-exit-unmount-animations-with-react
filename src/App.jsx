@@ -26,7 +26,12 @@ function App() {
       </main>
 
       <footer>
-        <p><a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react">GitHub</a></p>
+        <p>
+          <a href="https://github.com/xkema/blog-demo-exit-unmount-animations-with-react">See the code on GitHub</a>
+        </p>
+        <p>
+          <a href="https://kemalyilmaz.com/blog/exit-unmount-animations-with-react">Read the blog post</a>
+        </p>
       </footer>
     </div>
   )
